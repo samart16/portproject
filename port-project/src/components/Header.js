@@ -18,7 +18,7 @@ import  PackageLogo  from '../app/assets/img/icon.png';
             <NavbarBrand className='ms-5' href='/'>
               <img src={PackageLogo} alt='package logo' className='float-start' />
               <h1 className='mt-1'>QuickShip</h1>
-              <h5>For Your Overnight Shipping Needs</h5>
+              <h5>For Your Expedited Shipping Needs</h5>
             </NavbarBrand>
             <NavbarToggler onClick={() => setMenuOpen(!menuOpen)}/>
             <Collapse isOpen={menuOpen} navbar>
@@ -39,7 +39,7 @@ import  PackageLogo  from '../app/assets/img/icon.png';
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className='nav-link' to='/track order'>
+                        <NavLink className='nav-link' to='/trackorder'>
                             <i className='fa  fa-lg' /> Track Order
                         </NavLink>
                     </NavItem>

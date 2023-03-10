@@ -6,22 +6,23 @@ const ContactPage = () => {
         <Container>
             
             <Row className='row-content'>
-                <Col xs='12'>
-                    <h1>Send Us Your Feedback</h1>
-                    <br />
+                <Col xs='3'>
+                    <h1>Contact Us</h1>
                 </Col>
+            </Row>
+            <Row className='row-content'>
                 
-                <Col md='10'>
-                    <ContactForm />
+                <Col md='10' >
+                    <ContactForm  />
                 </Col>
             </Row>
             <Row className='row-content align-items-center'>
                 <Col sm='4'>
                     <h5>Our Address</h5>
                     <address>
-                    1 Nucamp Way
+                    15 Shipping Street
                         <br />
-                        Seattle, WA 98001
+                        Dallas, TX 75217
                         <br />
                         U.S.A.
                     </address>
@@ -29,18 +30,18 @@ const ContactPage = () => {
                 <Col>
                 <a
                         role='button'
-                        className='btn btn-link'
+                        className='btn btn-link text-dark'
                         href='tel:+12065551234'
                     >
-                        <i className='fa fa-phone' /> 1-206-555-1234
+                        <i className='fa fa-phone'  /> 1-214-555-1234
                     </a>
                     <br />
                     <a
                         role='button'
-                        className='btn btn-link'
+                        className='btn btn-link text-dark'
                         href='mailto:fakeemail@fakeemail.co'
                     >
-                        <i className='fa fa-envelope-o' /> campsites@nucamp.co
+                        <i className='fa fa-envelope-o' /> shipping@quickship.co
                     </a>
                 </Col>
             </Row>

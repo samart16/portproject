@@ -19,7 +19,7 @@ const Footer = () => {
                                 <Link className='text-light' to='/contact'>Contact</Link>
                             </li>
                             <li>
-                                <Link className='text-light' to='/track order'>Track Order</Link>
+                                <Link className='text-light' to='/trackorder'>Track Order</Link>
                             </li>
                         </ul>
                     </Col>

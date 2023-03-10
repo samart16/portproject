@@ -1,5 +1,6 @@
 import { Button, Label, Col, FormGroup} from 'reactstrap';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
+import { contactValidation } from '../utils/contactValidation';
 
 
 
@@ -21,22 +22,22 @@ const ContactForm = () => {
                 contactType: 'By Phone',
                 feedback: ''
             }}
-            // onSubmit={handleSubmit}
-            // validate={validateContactForm}
+            onSubmit={handleSubmit}
+            validate={contactValidation}
         >
-            <Form>
+            <Form >
                 <FormGroup row>
                     <Label htmlFor='firstName' md='2'>
                         First Name
                     </Label>
-                    <Col md='10'>
+                    <Col md={{size: 10}}>
                         <Field
                             name='firstName'
                             placeholder='First Name'
                             className='form-control'
                         />
                         <ErrorMessage name='firstName'>
-                            {(msg) => <p classname='text-danger'>{msg}</p>}
+                            {(msg) => <p className='text-danger'>{msg}</p>}
                         </ErrorMessage>
                     </Col>
                 </FormGroup>
@@ -51,7 +52,7 @@ const ContactForm = () => {
                             className='form-control'
                         />
                         <ErrorMessage name='lastName'>
-                            {(msg) => <p classname='text-danger'>{msg}</p>}
+                            {(msg) => <p className='text-danger'>{msg}</p>}
                         </ErrorMessage>
                     </Col>
                 </FormGroup>
@@ -66,7 +67,7 @@ const ContactForm = () => {
                             className='form-control'
                         />
                         <ErrorMessage name='phoneNum'>
-                            {(msg) => <p classname='text-danger'>{msg}</p>}
+                            {(msg) => <p className='text-danger '>{msg}</p>}
                         </ErrorMessage>
                     </Col>
                 </FormGroup>
@@ -82,33 +83,13 @@ const ContactForm = () => {
                             className='form-control'
                         />
                         <ErrorMessage name='email'>
-                            {(msg) => <p classname='text-danger'>{msg}</p>}
+                            {(msg) => <p className='text-danger'>{msg}</p>}
                         </ErrorMessage>
                     </Col>
                 </FormGroup>
-                {/* <FormGroup row>
-                    <Label check md={{ size: 4, offset: 2}}>
-                        <Field 
-                        name='agree'    
-                        type='checkbox'
-                        className='form-check-input'
-                        />{' '}
-                        May we contact you?
-                    </Label>
-                    <Col md='4'>
-                        <Field
-                            name='contactType'
-                            as='select'
-                            className='form-control'
-                        >
-                            <option>By Phone</option>
-                            <option>By Email</option>
-                        </Field>
-                    </Col>
-                </FormGroup> */}
                 <FormGroup row>
                     <Label htmlFor='feedback' md='2'>
-                        Your Feedback
+                        Comments
                     </Label>
                     <Col md='10'>
                         <Field
@@ -120,9 +101,9 @@ const ContactForm = () => {
                     </Col>
                 </FormGroup>
                 <FormGroup row>
-                    <Col md={{ size: 10, offset: 2 }}>
-                        < Button type='submit' color='primary'>
-                            Send Feedback
+                    <Col md={{ size: 1, offset: 2 }}>
+                        < Button type='submit' color='dark'>
+                            Send
                         </Button>
                     </Col>
                 </FormGroup>
