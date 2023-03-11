@@ -3,24 +3,24 @@ export const Services = [
         id: 0,
         name: '24 Hour Shiping',
         description:
-            "Bootstrap Outfitters supplies you with the gear you need at prices you can't beat."
+            "Lorem ipsum dolor sit amet, consectetur adipis"
     },
     {
         id: 1,
         name: 'Same Day Delivery',
         description:
-            'Join Git Out Expeditions to explore new horizons with a group of other adventurers!'
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.!'
     },
     {
         id: 2,
-        name: 'Mongo Fly Shop',
+        name: 'Real-time Tracking',
         description:
-            'Need a new fishing pole, a tacklebox, or flies of all kinds? Stop by Mongo Fly Shop.'
+            'eu tincidunt tortor aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh ipsum consequat'
     },
     {
         id: 3,
-        name: 'Node Outdoor Apparel',
+        name: 'Rewards Program',
         description:
-            'From polar fleeces to swimsuits, hiking boots to waders, a visit to Node will be sure to get you covered.'
+            'libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut'
     }
 ];

@@ -59,3 +59,25 @@ h3,
   font-weight: 500;
   font-size: 1.25rem;
 }
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slides {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slides > div {
+  display: none;
+  width: 100%;
+}
+
+.slides > div.active {
+  display: block;
+}
+
