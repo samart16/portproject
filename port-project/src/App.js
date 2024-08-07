@@ -2,8 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import  Header from './components/Header';
 import Footer from './components/Footer';
 import ContactPage from './pages/ContactPage';
-import TrackOrder from './pages/TrackOrder';
-import LocationList from './locations/LocationList';
+// import TrackOrder from './pages/TrackOrder';
 import Locations from './pages/Locations';
 import HomePage from './pages/HomePage';
 import './App.css';
@@ -15,10 +14,9 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='contact' element={<ContactPage/>} />
-        <Route path='trackorder' element={<TrackOrder/>}/>
+        {/* <Route path='trackorder' element={<TrackOrder/>}/> */}
         <Route path='locations' element={<Locations/>}/>
       </Routes>
-      {/* <LocationList /> */}
       <Footer />
     </div>
   );

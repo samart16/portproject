@@ -33,13 +33,13 @@ h3,
 
 .navbar-dark {
   background-color: #0f0113;
-  background-image: linear-gradient(to right, #3b3bdf, #2d5dec, #0b3ad6);
+  background-image: linear-gradient(to right, brown, tan, brown);
   margin-bottom: 2rem;
   min-height: 8rem;
 }
 
 .site-footer {
-  background-image: linear-gradient(#3b3bdf, #2d5dec);
+  background-image: linear-gradient(brown, tan);
   padding: 20px 0;
   margin-top: 7rem
 }
@@ -80,4 +80,5 @@ h3,
 .slides > div.active {
   display: block;
 }
+
 

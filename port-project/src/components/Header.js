@@ -14,11 +14,11 @@ import  PackageLogo  from '../app/assets/img/icon.png';
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <Navbar dark color='dark' sticky='top' expand='md'>
+        <Navbar dark color='primary' sticky='top' expand='md'>
             <NavbarBrand className='ms-5' href='/'>
               <img src={PackageLogo} alt='package logo' className='float-start' />
-              <h1 className='mt-1'>QuickShip</h1>
-              <h5>For Your Expedited Shipping Needs</h5>
+              <h2 className='mt-1'>QuickShip</h2>
+              <h7>For Your Expedited Shipping Needs</h7>
             </NavbarBrand>
             <NavbarToggler onClick={() => setMenuOpen(!menuOpen)}/>
             <Collapse isOpen={menuOpen} navbar>
@@ -39,9 +39,9 @@ import  PackageLogo  from '../app/assets/img/icon.png';
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className='nav-link' to='/trackorder'>
+                        {/* <NavLink className='nav-link' to='/trackorder'>
                             <i className='fa  fa-lg' /> Track Order
-                        </NavLink>
+                        </NavLink> */}
                     </NavItem>
                 </Nav>
             </Collapse>
@@ -50,3 +50,4 @@ import  PackageLogo  from '../app/assets/img/icon.png';
  };
 
  export default Header;
+

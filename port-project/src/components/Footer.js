@@ -18,9 +18,9 @@ const Footer = () => {
                             <li>
                                 <Link className='text-light' to='/contact'>Contact</Link>
                             </li>
-                            <li>
+                            {/* <li>
                                 <Link className='text-light' to='/trackorder'>Track Order</Link>
-                            </li>
+                            </li> */}
                         </ul>
                     </Col>
                     <Col xs='6' sm='3' md='5' className='text-center'>

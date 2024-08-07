@@ -10,6 +10,8 @@ import 'font-awesome/css/font-awesome.css';
 import 'typeface-lobster';
 import 'typeface-open-sans';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
